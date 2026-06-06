@@ -9,7 +9,7 @@ export default function Home() {
       {
         posts.map((post) => (
          <div key={post.names} className="mb-6 border-b pb-4">
-           <Link href={`/blog/$[name]`}>
+           <Link href={`/blog/${post.name}`}>
              <h2 className="text-2xl font-semibold">{post.title}</h2>
            </Link>
            <p className="text-gray-500">{post.date}</p>
